@@ -247,7 +247,7 @@ void locadora::valore(int x)
 }
 
 void locadora::remover(int x)
-        {
+ {
             int posicao = achar(x);
             int i;
             if ( posicao > -1 )
@@ -260,8 +260,7 @@ void locadora::remover(int x)
                  cout << "Removido com sucesso!" << endl;
                  }
                 else cout << "Nao foi possivel encontrar!" << endl;
-            
-        };
+}
 
 void locadora::alterar(int x)
 {
@@ -288,7 +287,7 @@ void locadora::mostrarp()
     int i, nom = 0, mid = 0,gen=0,jf=0;
     string s;
     int p=0;
-    cout<<"insira( nome/titulo, genero, jogo/filme, midia), se for por ano digite: 'ano' "<<endl;
+    cout<<"insira( titulo, genero, jogo ou midia). Se for por ano digite: 'ano' "<<endl;
     cin.ignore();
     getline(cin,s);
     
@@ -335,7 +334,7 @@ int menu(){
              << "3. alterar por codigo"<<endl
              << "4. listar tudo"<<endl
              << "5. busca"<<endl
-             << "6. mostrar pelo valor"<<endl
+             << "6. mostrar pelo valor atraves de codigo"<<endl
              << "7. listar jogos pela plataforma"<<endl
              << "8. Sair" << endl
              <<"_____________________________________________"<<endl
@@ -375,8 +374,8 @@ int main()
           case 7:k.mostrarj();break;
           case 8:treco =true; break;
           default: cout<< "Opcao invalida!"<<endl; break;
-        };
-    };
+        }
+    }
 
      cout << "Obrigado por utilizar nosso programa <3" << endl;   
      return 0;
